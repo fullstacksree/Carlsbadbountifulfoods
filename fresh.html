@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Homepage of Carlsbad Bountiful Foods">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Poppins&display=swap" rel="stylesheet">
+  <title>Carlsbad Bountiful Foods</title>
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+  <main>
+    <div class="header">
+      <img class="logo" src="images/Carlsbadlogo.webp" alt="carlsbad logo" width="250" height="150">
+      <div id="hamburgerButton"><span>&#9776;</span></div>
+        <div class="topnav">
+        <ul id="primaryNav">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="fresh.html">Fresh</a></li>
+        </ul>
+      </div>
+      </div>
+        <div class="fresh-grid">
+            <h2 class="bigger">Prepare your own drink!</h2></div>
+            <form id="mix-form">
+                <input type="date" name="date" hidden id="date">
+                <label class="margin-just" for="fullName">Full Name<span class="req-f">*</span> <br>
+                    <input name="fullName" type="text" class="input-box" id='fName' required>
+                </label>
+                <label class="margin-just" for="email">Email<span class="req-f">*</span><br>
+                    <input name="email" type="email" id="email" class="input-box" required>
+                </label>
+                <label class="margin-just" for="contact">Phone Number<span class="req-f">*</span><br>
+                    <input name="contact" type="tel" id="contact" class="input-box" required>
+                </label>
+                <div id="fruit-selector">
+                    <p>Choose up to 3 fruits:</p>
+                </div>
+                <p>You can add your special requests here</p>
+                <label for="add-instructions">  
+                <textarea name="add-instructions" id="add-instructions" cols="30" rows="10" class="input-box"></textarea></label> <br>
+                <input type="button" value="Juice it Up!" class="btn-alt btn" id="mix-btn"></form>
+            
+            <section id="form-output" class="true-center">
+                <h2 class="bigger-h">Your Nutrients</h2>
+                <div id="output">
+                    <p>Please create a drink to see the nutrients it contains</p>
+                </div>
+            </section>
+        </main>
+    <footer>
+  <img class="footer-logo" src="images/Carlsbadlogo.webp" alt="Carlsbad logo" width="250" height="150">
+  <p class ="contact-info">Contact Us: Email: reachus@carlsbadfoods.com <br>
+  Contact: +91 123-456-7890</p>
+  <div class ="footer-content">&copy; 2023 Carlsbad Bountiful Foods.</div>
+  <div class="social">
+  <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook icon"></a>
+  <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram icon"></a>
+  <a href="https://pinterest.com" target="_blank"><img src="images/pinterest.png" alt="pinterest icon"></a>                        
+  </div>
+  </footer>
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/fresh.js"></script>
+    <script src="scripts/display-number.js"></script>
+    <script src="scripts/last-update.js"></script>
+
+</body>
+</html>

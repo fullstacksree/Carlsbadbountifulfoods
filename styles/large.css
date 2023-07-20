@@ -1,0 +1,173 @@
+@media only screen and (min-width: 1200px) 
+{
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #C7D59F;
+}
+
+.header {
+    background-color: #C7D59F;
+    padding: 20px;
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #B7CE63;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #4B5842;
+    font-family: "Cuprum", Arial, Helvetica, sans-serif;
+    font-size: 2.0rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: gray;
+    color: black;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side {
+    width: 30%;       
+}
+
+.column.middle {
+    width: 40%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: grid;
+    width: auto;
+    background-color: #B7CE63;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+
+#primaryNav {
+    display: block;
+    grid-template-columns: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer {
+    padding: 20px;
+    text-align: left;
+}
+
+.top-weather {
+    display: grid;
+    grid-column: 1/4;
+}
+
+.weathertext {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-style: oblique;
+}
+
+table {
+    grid-column: 3;
+    font-size: 1rem;
+}
+
+footer {
+    display: block;
+    margin: 0;
+    background-color: #B7CE63;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+    /* FORM */
+
+    .fresh-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        border-radius: 5px;
+    }
+
+    .grid-fresh h2 {
+        display: grid;
+        grid-column: 1/3;
+        border-radius: 5px;
+
+    }
+
+    #mix-form {
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+        border-radius: 5px;
+    }
+
+    .form-output {
+        display: grid;
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #mix-button {
+        width: 40%;
+        border-radius: 5px;
+        background-color:#C7D59F;
+    }
+
+    #mix-form label input {
+        width: 40%;
+        border-radius: 5px;
+    }
+
+    /* ABOUT US */
+
+    .grid-about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+    }
+
+    #ourstory {
+        display: grid;
+        grid-column: 1;
+        text-align: justify;
+    }
+
+    #contact {
+        display: grid;
+        grid-column: 2;
+    }
+}   
